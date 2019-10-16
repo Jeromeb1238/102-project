@@ -7,24 +7,19 @@ body {
   width: 960px;
   background-color: rgb(34, 221, 234);
   font-family: 'Times New Roman', Times, serif;
-  color: rgb(red, green, blue);
+  color: rgb rgb(red, green, blue)
 }
-  header {
-    height: 100px;
-  }
-
-header > h1 {
+header {
+  height: 200px;
   margin: 100px;
   text-align: right;
-  border: 100px solid blue;
-
+  border: 10px solid blue;   
 }
 
   #header-image {
-    border: 50px solid blue;
-    float: right;
-    width: 15px;
-    height: 5px;
+    border: 5px solid blue;
+    float: left;
+    height: 75%;
 
   }
 
