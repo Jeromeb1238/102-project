@@ -4,19 +4,13 @@
   <head>
     <title>German Bread Recipe</title>
     <link rel = "stylesheet" href="styles.css">
+    <script src="app.js"></script>
   </head>
-
   <body>
-      <script src="name.js"></script>
-      <script src="greeting.js"></script>
-      <script src="likeBread.js"></script>
-      
-
-
       <header>
         <h1>Best Bread Recipe</h1>
           <img id="header-image" src="images/bread2.jfif" alt = "home made bread loaf">
-          <nav>
+          <nav id = "navHeader">
             <li><a href = "#description">Description</a></li>
             <li><a href = "#ingredients">Ingredients</a></li>
             <li><a href = "#steps">Steps</a></li>
@@ -24,14 +18,18 @@
           </nav>
       </header>
       <main>
-        <section>
+          <script>document.write(userName());</script>
+          <script>document.write(userLike());</script>
+          <script>document.write(greeting());</script>
+        <section id = "description">
           <h3 id = "description">Description of Recipe</h3>
           <p>This is an old German tradition pass down through generations.  This recipe is one of the easiest for German bread experience. It uses half white, half whole wheat, sourdough, and caraway seeds. Two rises make this bread light and easy to slice. It's perfect for serving with soup or braut.   The recipe will produce 2 full size loaves 4x8" pan.</p>
         </section>
         <nav>
-          <img src="images/Bread1.jfif" alt = "Image of finished breadloaf">
-        <section>
+        <section id = "ingredients">
           <h3 id = "ingredients">Ingredients</h3>
+          <img id = "ingredient img" src="images/Bread1.jfif" alt = "Image of finished breadloaf">
+
           <ul>
             <li>2 1/2 cups of white flour</li>
             <li>2 1/2 cups whole wheat flour</li>
@@ -47,7 +45,7 @@
           </ul>
         </nav>
         </section>
-        <section>
+        <section id = "steps">
           <h3 id = "steps">Steps to Making Bread</h3>
           <ol>
             <li>Gather ingredients</li>

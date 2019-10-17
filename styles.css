@@ -1,36 +1,39 @@
 * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  width: 100%;
+  ;
 }
 
 body {
   margin: 0px auto;
   width: 960px;
-  background-color: rgb(34, 221, 234);
+  /* background-color: rgb(34, 221, 234); */
   font-family: 'Times New Roman', Times, serif;
   color: rgb rgb(red, green, blue)
 }
 header {
-  height: 200px;
-  margin: 100px;
-  text-align: right;
-  border: 10px solid blue;   
+  height: 250px;
+  font-size: 150%;
+  text-align: center;
+  border: 1px solid blue;   
 }
 
   #header-image {
-    border: 5px solid blue;
     float: left;
-    height: 75%;
+    width: 20%;
+    margin-top: -65px;
+  } 
 
-  }
-
-  header > nav > ul >li {
+  #navHeader>li{
     display: inline-block;
-    width: 100px;
-    padding: 5px;
-    margin: 10px;
+    width: 150px;
+    padding: 1px;
+    margin: 5px;
+    background-color: rgb(164, 185, 122);
     border: 1px solid black;
-    background-color: rgb(red, green, blue);
-    border: 1px solid black;
-    text-align: center;
+    border-radius: 25px;
+    /* text-align: center; */
+    /* margin-top: 150; */
+    }
 
   }

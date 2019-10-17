@@ -2,10 +2,10 @@ var likeBread = prompt("Do you like bread or donuts?");
 var message;
 
 if(likeBread === 'bread') {
-  message = 'Bread is the best!';
+  message = 'Bread, then you are at the right place!';
 } else if (likeBread === 'donuts') {
-  message = 'Donuts are not as good for you as bread';
+  message = 'Donuts, this site is a receipe for bread.';
 } else {
-  message = 'You do not like bread or donuts?  What?';
+  message = 'You don\'nt like bread or donuts?  What?';
 }
 document.write('<h3>' + message + '</h3>');
