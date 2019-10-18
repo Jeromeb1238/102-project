@@ -35,3 +35,35 @@ function userLike() {
   }
   return '<h3>' + message + '</h3>';
 }
+// Getting a count for qty of bread loaves
+var howMany = function (){
+  var count = prompt('Great, how many loaves of bread would you like?');
+
+  while (count === '' || isNaN(count)){
+    var count = prompt('Great, how many would you like to order? PLEASE enter a number');
+  }
+  return count;
+}
+// This specifies white or wheat loaf and then returns an image of bread
+function getItem() {
+  var order = prompt('Would you like \'white bread\' or \'wheat bread\'');
+  var item;
+
+  if (order === 'white bread') {
+    item = '<img src="images/whiteBread.jfif" width="100px">';
+  } else if (order === 'wheatBread') {
+    item = '<img src="images/wheatBread.jfif" width="100px">';
+  }
+  return item;
+}
+// This section is what will be displayed on web page
+function showOrder(){
+  var item = getItem();
+  var total = howMany();
+  var result = '';
+
+  for(var i = 0; i < total; i++){
+    result = result + '<p>You have ordered ' + (i + 1) + ' ' + item + ' loaves.</p>';
+  }
+  return result;
+}
